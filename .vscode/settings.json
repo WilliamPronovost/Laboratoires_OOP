@@ -15,7 +15,10 @@
         "xutility": "c",
         "codecvt": "c",
         "xlocale": "c",
-        "__locale": "c"
+        "__locale": "c",
+        "vector": "c",
+        "xstring": "c",
+        "map": "cpp"
     },
     "cmake.configureOnOpen": false
 }

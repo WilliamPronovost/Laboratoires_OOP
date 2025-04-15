@@ -90,6 +90,8 @@ bool build_game(void)
     knob_cmd_append(&cmd, "--debug", "-std=c++11", "-fno-sanitize=undefined","-fno-omit-frame-pointer");
     knob_cmd_append(&cmd, "-I"RAYLIB_PATH"/src");
     build_raylib(&cmd);
+    knob_cmd_append(&cmd, "GameObject");
+    knob_cmd_append(&cmd, "Sprite");
     knob_cmd_append(&cmd,knob_temp_sprintf("./src/%s.cpp",LAB_NAME),"-o","./Deployment/game.exe");
     knob_cmd_append(&cmd, "-lkernel32","-lwinmm", "-lgdi32","-lopengl32");
     knob_cmd_append(&cmd,"./src/main.cpp");
